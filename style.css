@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+body {
+    background: linear-gradient(135deg, #39d6d4, #0a697a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+div h2 {
+    color: linear-gradient(135deg, #39d6d4, #0a697a);
+}
+
+
+.card-container {
+    background-color: #ffffff;
+    width: 400px;
+    padding: 45px 35px;
+    border-radius: 12px;
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+
+#form-toggle {
+    display: none;
+}
+
+
+.form-box h1 {
+    text-align: center;
+    color: #268fa1;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #6b7280;
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+
+.input-field {
+    margin-bottom: 18px;
+}
+
+.input-field label {
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    color: #268fa1;
+    margin-bottom: 6px;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 11px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+
+.input-field input:focus {
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #39d6d4, #0a697a);
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 5px;
+    transition: background-color 0.2s ease;
+}
+
+.submit-btn:hover {
+    background: linear-gradient(135deg, #177e7d, #0a697a);
+}
+
+
+.switch-note {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 13px;
+    color: #6b7280;
+}
+
+.toggle-btn {
+    display: inline;
+    color: #268fa1;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.toggle-btn:hover {
+    text-decoration: underline;
+}
+
+
+
+
+.signup-form {
+    display: none;
+}
+
+#form-toggle:checked~.login-form {
+    display: none;
+}
+
+#form-toggle:checked~.signup-form {
+    display: block;
+}

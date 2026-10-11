@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylish Login & Signup Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="card-container">
+
+        <input type="checkbox" id="form-toggle">
+
+        <!-- 1. LOGIN FORM -->
+        <div class="form-box login-form">
+            <h1>Welcome Back</h1>
+            <p class="subtitle">Please enter your details to login</p>
+
+            <form action="#">
+                
+
+                <div class="input-field">
+                    <label>Enter your Email</label>
+                    <input type="text" placeholder="Enter your E-mail" required>
+                </div>
+
+                <div class="input-field">
+                    <label> Enter your password </label>
+                    <input type="password" placeholder="Enter password" required>
+                </div>
+
+                <button type="submit" class="submit-btn">Login</button>
+            </form>
+
+            <p class="switch-note">
+                Don't have an account? <label for="form-toggle" class="toggle-btn">Sign Up</label>
+            </p>
+        </div>
+
+        <!-- 2. SIGNUP FORM -->
+        <div class="form-box signup-form">
+            <h2>Create Account</h2>
+            <p class="subtitle">Fill in the details to get started</p>
+
+            <form action="#">
+               <div class="input-field">
+                    <label>Enter your full name </label>
+                    <input type="text" placeholder="Enter your full name  " required>
+                </div>
+                
+                <div class="input-field">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="input-field">
+                    <label>Password</label>
+                    <input type="password" placeholder="Create a password" required>
+                </div>
+
+                <button type="submit" class="submit-btn">Sign Up</button>
+            </form>
+
+            <p class="switch-note">
+                Already have an account? <label for="form-toggle" class="toggle-btn">Login</label>
+            </p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
